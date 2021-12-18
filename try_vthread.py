@@ -18,8 +18,6 @@ if not os.path.exists('bytecode_dict'):
         BYTECODE_DICT.add('0x')
         print(BYTECODE_DICT, file = f)
 BYTECODE_DICT = eval(open('bytecode_dict', 'r').readlines()[0])
-pool_1 = vthread.pool(5, gqueue=1)
-pool_2 = vthread.pool(5, gqueue=2)
 
 class JsonParser(object):
     def __init__(self):
