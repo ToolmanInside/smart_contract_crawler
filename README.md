@@ -13,7 +13,7 @@ A crawler that can automatically download smart contracts from Etherscan.
 #### Change the number of threads
 
 ```python
-# just change the number in pool()
+# just change the number in try_vthread.py
 @vthread.pool(8)
 ```
 
